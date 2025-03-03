@@ -3,7 +3,7 @@ print(" \n")
 print("        WELCOME TO WORD GUESSING GAME")
 print("   YOU HAVE 5 CHANCES IF YOU GUESS WRONG ANSWER")
 print("===============================================================================================")
-# While loop for play next game
+
 while True:
   Animals=['elephant' , 'tiger' , 'gorilla' , 'chimpanzee' , 'dolphin' , 'whale' , 'shark' , 'jellyfish' , 'squid' , 'snail' , 'spider' ,'ant' , 'bee' , 'butterfly' , 'lizard' , 'snake' , 'crocodile' , 'alligator' , 'hippopotamus' , 'rhinoceros' , 'zebra' , 'horse' , 'cow' , 'dog' , 'cat' , 'squirrel' , 'deer' , 'bear' , 'wolf' , 'fox' , 'skunk' , 'raccoon' , 'opossum' , 'hamster' ]
   Birds=['parrot','owl','falcon','baldeagle','sparrow','woodpecker','bluejay','robin','pigeon','cardinal','finch','hummingbird','oriole','swallow','cuckoo','osprey','eagle','vulture',' pelican','albatross','seagull','stork','heron']
@@ -23,14 +23,14 @@ while True:
       print("Hint: Related To Philoshopy")
   else:
       print("Hint: Related To Science And Technology")
-  # print(first_choose)
+  
   randon_animal=random.choice(first_choose)
   print("The length of the word is:  ",len(randon_animal))
   print(randon_animal)
-  #Function to show first and last word and '_' in the middle
+
   def first():
    res=[]
-   #n=random.randint(1,3)
+ 
    res.append(randon_animal[0])
    i=1
    for i in range(int(len(randon_animal))-2):
